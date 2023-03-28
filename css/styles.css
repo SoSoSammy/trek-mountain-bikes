@@ -10,11 +10,147 @@
     font-weight: bold;
 }
 
+/* Create CSS Variables */
+:root {
+    --accent-color1: #f7bf4f;
+    --accent-color2: #4f758c;
+    --supporting-color1: #3e4001;
+    --supporting-color2: #262401;
+    --dark-color: #271801;
+}
+
+/* ===================== Global ====================== */
+body {
+    color: var(--dark-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: Bellfort;
+    font-family: "Bellfort", sans-serif;
 }
+
+i {
+    cursor: pointer;
+}
+
+input {
+    padding: 8px;
+}
+
+.container {
+    width: 90vw;
+    margin: auto;
+}
+
+/* ==================== Skip to Main Content ======================= */
+.skip-to-main-content-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: var(--dark-color);
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+}
+
+.skip-to-main-content-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+/* ========================= Navigation ========================= */
+.navbar {
+    background-color: aliceblue;
+    padding: 20px 0;
+}
+
+.navbar .logo img {
+    width: 8em;
+}
+
+.main-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0;
+    display: none;
+}
+
+.main-nav li {
+    margin-bottom: 10px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Searchbar */
+.nav-searchbar {
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-color);
+    margin: 30px 0;
+}
+
+.nav-searchbar input {
+    flex: 1;
+    align-self: stretch;
+    font-size: 14px;
+}
+
+.nav-searchbar i {
+    color: white;
+    padding: 10px;
+}
+
+/* Mobile Main Nav Icons */
+.main-nav-icons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+.main-nav-icon {
+    flex: 1;
+    text-align: center;
+}
+
+.main-nav-icon-1 {
+    border-right: 1px solid var(--dark-color);
+}
+
+.nav-icons {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 22px;
+}
+
+.nav-icon {
+    margin-left: 12px;
+}
+
+.nav-active {
+    display: block;
+}
+
+
+
+
