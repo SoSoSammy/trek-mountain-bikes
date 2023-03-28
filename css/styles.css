@@ -1,0 +1,20 @@
+/* Get the Bellfort Font Family from Files */
+@font-face {
+    font-family: Bellfort;
+    src: url(../fonts/Bellfort-Family/BellfortRegular.otf);
+}
+
+@font-face {
+    font-family: Bellfort;
+    src: url(../fonts/Bellfort-Family/BellfortBold.otf);
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Bellfort;
+}
