@@ -36,6 +36,7 @@ h4,
 h5,
 h6 {
     font-family: "Bellfort", sans-serif;
+    margin: 0;
 }
 
 i {
@@ -49,6 +50,20 @@ input {
 .container {
     width: 90vw;
     margin: auto;
+}
+
+.btn {
+    color: var(--dark-color);
+    background-color: var(--accent-color1);
+    text-decoration: none;
+    padding: 8px 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+    background-color: #e3ac3c;
 }
 
 /* ==================== Skip to Main Content ======================= */
@@ -71,7 +86,6 @@ input {
 
 /* ========================= Navigation ========================= */
 .navbar {
-    background-color: aliceblue;
     padding: 20px 0;
 }
 
@@ -136,7 +150,7 @@ input {
 
 .nav-icons {
     position: absolute;
-    top: 25px;
+    top: 28px;
     right: 20px;
     display: flex;
     justify-content: flex-end;
@@ -147,10 +161,79 @@ input {
     margin-left: 12px;
 }
 
+/* When the Hamburger Menu is Clicked */
 .nav-active {
     display: block;
 }
 
+/* ============================ Hero Section =========================== */
+.hero-section {
+    background: url(../images/jan-muehlbach-unsplash-mobile.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 360px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section h1 {
+    color: white;
+    font-size: 60px;
+    width: 228px;
+    text-align: center;
+}
+
+.hero-section p {
+    color: white;
+    font-size: 18px;
+    width: 204px;
+    text-align: center;
+}
+
+/* ========================== Shopping Item Cards ========================= */
+.shopping-item-cards .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.shopping-item-card {
+    background-color: #D9D9D9;
+    padding: 25px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.shopping-item-card:not(:nth-child(2)) {
+    margin: 25px 0;
+}
+
+.shopping-item-card h2 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.shopping-item-card span.shop-now {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.shopping-item-card span.shop-now i {
+    margin-left: 5px;
+    transition: all 0.2s ease-in;
+}
+
+/* When the Shop Now span is hovered, the arrow icon will move to the right */
+.shopping-item-card span.shop-now:hover > i {
+    margin-left: 20px;
+}
 
 
 
