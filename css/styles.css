@@ -84,7 +84,7 @@ input {
     opacity: 1;
 }
 
-/* ========================= Navigation ========================= */
+/* =========================== Navigation =========================== */
 .navbar {
     padding: 20px 0;
 }
@@ -118,7 +118,7 @@ input {
     display: flex;
     align-items: center;
     background-color: var(--dark-color);
-    margin: 30px 0;
+    margin: 25px 0 30px 0;
 }
 
 .nav-searchbar input {
