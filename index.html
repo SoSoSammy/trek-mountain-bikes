@@ -27,60 +27,140 @@
 
     <!-- ========================== Sale Promo ========================= -->
     <div class="sale-promo">
-        <p>Spring Sale: 50% on Select items! <a href class="link">Shop now</a></p>
+        <div class="container">
+            <p>Spring Sale: 50% on Select items! <a href class="link">Shop now</a></p>
+        </div><!-- end .container -->
     </div><!-- end .sale-promo -->
 
     <!-- ========================= Navigation ============================== -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-icon">
-                <span class="navbar-toggle" id="js-navbar-toggle">
-                    <img src="images/icons/menu.png">
-                </span><!-- end .navbar-toggle #js-navbar-toggle -->
-            </div><!-- end .nav-icon -->
+        <div class="navbar-row">
+            <div class="container">
+                <!-- ============ Hamburger menu ============= -->
+                <div class="nav-icon navbar-row-item">
+                    <span class="navbar-toggle" id="js-navbar-toggle">
+                        <img src="images/icons/menu.png">
+                    </span><!-- end .navbar-toggle #js-navbar-toggle -->
+                </div><!-- end .nav-icon navbar-row-item -->
 
-            <a href="#" class="logo">
-                <img src="images/logo/Trek Mountain Bikes Logo.png" alt="Trek Mountain Bikes Logo">
-            </a><!-- end .logo -->
+                <!-- ================ Logo ===================== -->
+                <a href="#" class="logo navbar-row-item">
+                    <img src="images/logo/Trek Mountain Bikes Logo.png" alt="Trek Mountain Bikes Logo">
+                </a><!-- end .logo navbar-row-item -->
 
-            <ul class="main-nav" id="js-menu">
-                <div class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Bikes</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Components</a></li>
-                    <li><a href="#">Shop All</a></li>
-                    <li><a href="#">Sale</a></li>
-                </div><!-- end .nav-links -->
+                <!-- ====== Search icon and shopping cart ====== -->
+                <div class="nav-icons navbar-row-item">
+                    <div class="nav-icon">
+                        <span class="searchbar-toggle" id="js-searchbar-toggle">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span><!-- end .searchbar-toggle #js-searchbar-toggle -->
+                    </div><!-- end .nav-icon -->
 
-                <div class="nav-searchbar">
+                    <div class="nav-icon">
+                        <img src="images/icons/shopping-cart.png">
+                    </div><!-- end .nav-icon -->
+                </div><!-- end .nav-icons navbar-row-item -->
+            </div><!-- end .container -->
+        </div><!-- end .navbar-row -->
+
+        <!-- ============= Nav searchbar ============== -->
+        <div class="nav-searchbar" id="js-searchbar">
+            <div class="container">
+                <div class="searchbar">
                     <input type="text" placeholder="Search">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                </div><!-- end .nav-searchbar -->
+                </div><!-- end .searchbar -->
+            </div><!-- end .container -->
+        </div><!-- end .nav-searchbar #js-searchbar -->
 
-                <div class="main-nav-icons">
-                    <div class="main-nav-icon main-nav-icon-1">
-                        <i class="fa-solid fa-user"></i>
-                    </div><!-- end .main-nav-icon main-nav-icon-1 -->
+        <!-- ========= Mobile navigation ============= -->
+        <div class="mobile-nav" id="js-menu">
+            <div class="mobile-nav-header">
+                <h2>Menu</h2>
+                <i class="fa-solid fa-xmark" id="js-navbar-toggle-close"></i>
+            </div><!-- end .mobile-nav-header -->
 
-                    <div class="main-nav-icon main-nav-icon-2">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div><!-- end .main-nav-icon main-nav-icon-2 -->
-                </div><!-- end .main-nav-icons -->
-            </ul><!-- end .main-nav #js-menu -->
+            <div class="mobile-nav-body">
+                <div class="nav-links">
+                    <a href="#">Bikes</a>
 
-            <div class="nav-icons">
-                <div class="nav-icon">
-                    <img src="images/icons/shopping-cart.png">
-                </div><!-- end .nav-icon -->
+                    <div class="nav-link-dropdown">
+                        <div class="dropdown-label">
+                            <a href="#">Accessories
+                                <span class="dropdown-toggle-icon">
+                                    >
+                                </span></a>
+                        </div><!-- end .dropdown-label -->
 
-                <div class="nav-icon">
-                    <span class="searchbar-toggle" id="js-searchbar-toggle">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </span><!-- end .searchbar-toggle #js-searchbar-toggle -->
-                </div><!-- end .nav-icon -->
-            </div><!-- end .nav-icons -->
-        </div><!-- end .container -->
+
+                        <div class="dropdown">
+                            <a href="#">Lights</a>
+                            <a href="#">Baskets</a>
+                            <a href="#">Bags</a>
+                        </div><!-- end .dropdown -->
+                    </div><!-- end .nav-link-dropdown -->
+
+                    <div class="nav-link-dropdown">
+                        <div class="dropdown-label">
+                            <a href="#">Components
+                                <span class="dropdown-toggle-icon">
+                                    >
+                                </span></a>
+                        </div><!-- end .dropdown-label -->
+
+                        <div class="dropdown">
+                            <a href="#">Seats</a>
+                            <a href="#">Brakes</a>
+                            <a href="#">Wheels</a>
+                            <a href="#">Handlebars</a>
+
+                            <div class="nav-link-dropdown">
+                                <div class="dropdown-label">
+                                    <a href="#">Drivetrain
+                                        <span class="dropdown-toggle-icon">
+                                            >
+                                        </span></a>
+                                </div><!-- end .dropdown-label -->
+
+                                <div class="dropdown">
+                                    <a href="#">Chains</a>
+                                    <a href="#">Shifters</a>
+
+                                    <div class="nav-link-dropdown">
+                                        <div class="dropdown-label">
+                                            <a href="#">Derailleurs
+                                                <span class="dropdown-toggle-icon">
+                                                    >
+                                                </span></a>
+                                        </div><!-- end .dropdown-label -->
+
+                                        <div class="dropdown">
+                                            <a href="#">Front</a>
+                                            <a href="#">Rear</a>
+                                        </div><!-- end .dropdown -->
+                                    </div><!-- end .nav-link-dropdown -->
+                                </div><!-- end .dropdown -->
+                            </div><!-- end .nav-link-dropdown -->
+
+                        </div><!-- end .dropdown -->
+                    </div><!-- end .nav-link-dropdown -->
+
+
+                    <a href="#">Shop All</a>
+                    <a href="#">Sale</a>
+                </div><!-- end .nav-links -->
+            </div><!-- end .mobile-nav-body -->
+
+            <div class="mobile-nav-footer">
+                <img src="images/icons/user.png">
+                <p>Log in or sign up</p>
+            </div><!-- end .mobile-nav-footer -->
+        </div><!-- end .mobile-nav #js-menu -->
+
+        <!-- ========== Desktop navigation ============ -->
+        <div class="desktop-nav">
+
+        </div><!-- end .desktop-nav -->
     </nav><!-- end .navbar -->
 
     <main id="main">
