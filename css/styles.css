@@ -12,11 +12,11 @@
 
 /* Create CSS Variables */
 :root {
-    --accent-color1: #f7bf4f;
-    --accent-color2: #4f758c;
-    --supporting-color1: #3e4001;
+    --accent-color1: #faba8e;
+    --accent-color2: #587471;
+    --supporting-color1: #d6dee4;
     --supporting-color2: #262401;
-    --dark-color: #271801;
+    --dark-color: #1c2e1b;
 }
 
 /* ===================== Global ====================== */
@@ -55,6 +55,7 @@ input {
 .btn {
     color: var(--dark-color);
     background-color: var(--accent-color1);
+    font-weight: 900;
     text-decoration: none;
     padding: 8px 50px;
     font-size: 18px;
@@ -63,7 +64,7 @@ input {
 }
 
 .btn:hover {
-    background-color: #e3ac3c;
+    background-color: #e2a57c;
 }
 
 /* ==================== Skip to Main Content ======================= */
@@ -87,6 +88,11 @@ input {
 /* =========================== Navigation =========================== */
 .navbar {
     padding: 20px 0;
+}
+
+.navbar .nav-icon .navbar-toggle#js-navbar-toggle,
+.navbar .nav-icons .nav-icon img {
+    cursor: pointer;
 }
 
 .navbar .logo img {
@@ -148,15 +154,6 @@ input {
     border-right: 1px solid var(--dark-color);
 }
 
-.nav-icons {
-    position: absolute;
-    top: 28px;
-    right: 20px;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 22px;
-}
-
 .nav-icon {
     margin-left: 12px;
 }
@@ -168,7 +165,7 @@ input {
 
 /* ============================ Hero Section =========================== */
 .hero-section {
-    background: url(../images/jan-muehlbach-unsplash-mobile.jpeg);
+    background: url(../images/daniel-salcius-RRcYcdGY630-unsplash.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -182,16 +179,8 @@ input {
 }
 
 .hero-section h1 {
-    color: white;
     font-size: 60px;
     width: 228px;
-    text-align: center;
-}
-
-.hero-section p {
-    color: white;
-    font-size: 18px;
-    width: 204px;
     text-align: center;
 }
 
@@ -231,9 +220,6 @@ input {
 }
 
 /* When the Shop Now span is hovered, the arrow icon will move to the right */
-.shopping-item-card span.shop-now:hover > i {
+.shopping-item-card span.shop-now:hover>i {
     margin-left: 20px;
 }
-
-
-
