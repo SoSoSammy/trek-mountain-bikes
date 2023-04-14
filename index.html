@@ -57,7 +57,7 @@
                     </div><!-- end .nav-icon -->
 
                     <div class="nav-icon">
-                        <img src="images/icons/shopping-cart.png">
+                        <i class="fa-solid fa-cart-shopping" id="js-cart-toggle"></i>
                     </div><!-- end .nav-icon -->
                 </div><!-- end .nav-icons navbar-row-item -->
             </div><!-- end .container -->
@@ -74,7 +74,7 @@
         </div><!-- end .nav-searchbar #js-searchbar -->
 
         <!-- ========= Mobile navigation ============= -->
-        <div class="mobile-nav" id="js-menu">
+        <section class="mobile-nav" id="js-menu">
             <div class="mobile-nav-header">
                 <h2>Menu</h2>
                 <i class="fa-solid fa-xmark" id="js-navbar-toggle-close"></i>
@@ -155,13 +155,28 @@
                 <img src="images/icons/user.png">
                 <p>Log in or sign up</p>
             </div><!-- end .mobile-nav-footer -->
-        </div><!-- end .mobile-nav #js-menu -->
+        </section><!-- end .mobile-nav #js-menu -->
 
         <!-- ========== Desktop navigation ============ -->
         <div class="desktop-nav">
 
         </div><!-- end .desktop-nav -->
-    </nav><!-- end .navbar -->
+
+        <!-- ================== Cart ==================== -->
+        <section class="cart" id="js-cart-sidebar">
+            <div class="cart-header">
+                <i class="fa-solid fa-xmark" id="js-cart-toggle-close"></i>
+            </div><!-- end .cart-header -->
+
+            <div class="cart-body">
+                <p>Your cart is empty</p>
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <a href="#" class="btn">Shop Now</a>
+            </div><!-- end .cart-body -->
+        </section><!-- end .cart -->
+    </nav><!-- end .navbar #js-cart-sidebar -->
 
     <main id="main">
         <!-- =========================== Hero Section ============================ -->
@@ -173,24 +188,226 @@
         <!-- ========================= Shopping Item Cards ======================== -->
         <section class="shopping-item-cards">
             <div class="container">
-                <div class="shopping-item-card">
+                <div class="shopping-item-card shopping-item-card-1">
                     <h2>Bikes</h2>
                     <span class="shop-now">Shop now <i class="fa-solid fa-arrow-right"></i></span>
-                </div><!-- end .shopping-item-card -->
+                </div><!-- end .shopping-item-card shopping-item-card-1 -->
 
-                <div class="shopping-item-card">
+                <div class="shopping-item-card shopping-item-card-2">
                     <h2>Accessories</h2>
                     <span class="shop-now">Shop now <i class="fa-solid fa-arrow-right"></i></span>
-                </div><!-- end .shopping-item-card -->
+                </div><!-- end .shopping-item-card shopping-item-card-2 -->
 
-                <div class="shopping-item-card">
+                <div class="shopping-item-card shopping-item-card-3">
                     <h2>Components</h2>
                     <span class="shop-now">Shop now <i class="fa-solid fa-arrow-right"></i></span>
-                </div><!-- end .shopping-item-card -->
+                </div><!-- end .shopping-item-card shopping-item-card-3 -->
             </div><!-- end .container -->
         </section><!-- end .shopping-item-cards -->
 
+        <!-- ============================= New Arrivals ============================== -->
+        <section class="new-arrivals">
+            <div class="container">
+                <h2>New Arrivals</h2>
+
+                <div class="product-cards">
+                    <div class="product-card">
+                        <img src="images/bike-1.jpeg" alt="bike">
+                        <div class="product-details">
+                            <h3>Product Name</h3>
+                            <p>$1886</p>
+                        </div><!-- end .product-details -->
+                    </div><!-- end .product-card -->
+
+                    <div class="product-card">
+                        <img src="images/bike-2.jpeg" alt="bike">
+                        <div class="product-details">
+                            <h3>Product Name</h3>
+                            <p>$1886</p>
+                        </div><!-- end .product-details -->
+                    </div><!-- end .product-card -->
+
+                    <div class="product-card">
+                        <img src="images/bike-1.jpeg" alt="bike">
+                        <div class="product-details">
+                            <h3>Product Name</h3>
+                            <p>$1886</p>
+                        </div><!-- end .product-details -->
+                    </div><!-- end .product-card -->
+
+                    <div class="product-card">
+                        <img src="images/bike-2.jpeg" alt="bike">
+                        <div class="product-details">
+                            <h3>Product Name</h3>
+                            <p>$1886</p>
+                        </div><!-- end .product-details -->
+                    </div><!-- end .product-card -->
+
+                    <div class="product-card">
+                        <img src="images/bike-1.jpeg" alt="bike">
+                        <div class="product-details">
+                            <h3>Product Name</h3>
+                            <p>$1886</p>
+                        </div><!-- end .product-details -->
+                    </div><!-- end .product-card -->
+
+                    <div class="product-card">
+                        <img src="images/bike-2.jpeg" alt="bike">
+                        <div class="product-details">
+                            <h3>Product Name</h3>
+                            <p>$1886</p>
+                        </div><!-- end .product-details -->
+                    </div><!-- end .product-card -->
+                </div><!-- end .product-cards -->
+            </div><!-- end .container -->
+        </section><!-- end .new-arrivals -->
+
+        <!-- ============================ Best Sellers =============================== -->
+        <section class="best-sellers">
+            <div class="container">
+                <h2>Best Sellers</h2>
+                <div class="product-cards">
+                    <div class="product-card">
+                        <img src="images/bike-4.jpeg" alt="bike">
+                        <div class="product-details">
+                            <h3>Product Name</h3>
+                            <p>$1886</p>
+                        </div><!-- end .product-details -->
+                    </div><!-- end .product-card -->
+
+                    <div class="product-card">
+                        <img src="images/bike-3.jpeg" alt="bike">
+                        <div class="product-details">
+                            <h3>Product Name</h3>
+                            <p>$1886</p>
+                        </div><!-- end .product-details -->
+                    </div><!-- end .product-card -->
+
+                    <div class="product-card">
+                        <img src="images/bike-4.jpeg" alt="bike">
+                        <div class="product-details">
+                            <h3>Product Name</h3>
+                            <p>$1886</p>
+                        </div><!-- end .product-details -->
+                    </div><!-- end .product-card -->
+
+                    <div class="product-card">
+                        <img src="images/bike-3.jpeg" alt="bike">
+                        <div class="product-details">
+                            <h3>Product Name</h3>
+                            <p>$1886</p>
+                        </div><!-- end .product-details -->
+                    </div><!-- end .product-card -->
+
+                    <div class="product-card">
+                        <img src="images/bike-4.jpeg" alt="bike">
+                        <div class="product-details">
+                            <h3>Product Name</h3>
+                            <p>$1886</p>
+                        </div><!-- end .product-details -->
+                    </div><!-- end .product-card -->
+
+                    <div class="product-card">
+                        <img src="images/bike-3.jpeg" alt="bike">
+                        <div class="product-details">
+                            <h3>Product Name</h3>
+                            <p>$1886</p>
+                        </div><!-- end .product-details -->
+                    </div><!-- end .product-card -->
+                </div><!-- end .product-cards -->
+            </div><!-- end .container -->
+        </section><!-- end .best-sellers -->
+
+        <!-- ========================= Business Features ======================== -->
+        <section class="business-features">
+            <div class="container">
+                <div class="business-feature-cards">
+                    <div class="business-feature-card">
+                        <img src="images/icons/customer-service.png" alt="customer service">
+                        <h2>On Demand Customer Service</h2>
+                        <a href="#" class="btn-outline">Contact Us</a>
+                    </div><!-- end .business-feature-card -->
+
+                    <div class="business-feature-card business-feature-card-middle">
+                        <img src="images/icons/wrench.png" alt="customer service">
+                        <h2>Free Repairs</h2>
+                        <a href="#" class="btn-outline">Repair Bike</a>
+                    </div><!-- end .business-feature-card business-feature-card-middle -->
+
+                    <div class="business-feature-card">
+                        <img src="images/icons/return-box.png" alt="customer service">
+                        <h2>Free Shipping and Returns</h2>
+                        <a href="#" class="btn-outline">Return Item</a>
+                    </div><!-- end .business-feature-card -->
+                </div><!-- end .business-feature-cards -->
+            </div><!-- end .container -->
+        </section><!-- end .business-features -->
+
+        <!-- ======================== Email Newsletter ========================== -->
+        <section class="email-newsletter">
+            <div class="container">
+                <h2>Coupons and Exclusive Offers</h2>
+                <p>Sign up to receive 15% off your next order!</p>
+                <a href="#" class="btn">Subscribe</a>
+            </div><!-- end .container -->
+        </section><!-- end .email.newsletter-->
     </main><!-- end #main -->
+
+    <!-- =============================== Footer ================================ -->
+    <footer>
+        <div class="container">
+            <div class="footer-rows-container">
+                <div class="footer-row">
+                    <div class="footer-column">
+                        <h3>My Account</h3>
+                        <a href="#" class="link">Log in</a>
+                        <a href="#" class="link">Sign up</a>
+                        <a href="#" class="link">Rewards</a>
+                    </div><!-- end .footer-column -->
+
+                    <div class="footer-column">
+                        <h3>Orders</h3>
+                        <a href="#" class="link">Shipping</a>
+                        <a href="#" class="link">Returns</a>
+                        <a href="#" class="link">Order Status</a>
+                    </div><!-- end .footer-column -->
+                </div><!-- end .footer-row -->
+
+                <div class="footer-row">
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <a href="#" class="link">Our story</a>
+                        <a href="#" class="link">Contact us</a>
+                        <a href="#" class="link">Locations</a>
+                    </div><!-- end .footer-column -->
+
+                    <div class="footer-column">
+                        <h3>My Account</h3>
+                        <a href="#" class="link">Terms of service</a>
+                        <a href="#" class="link">Prviacy policy</a>
+                        <a href="#" class="link">Warranty</a>
+                    </div><!-- end .footer-column -->
+                </div><!-- end .footer-row -->
+            </div><!-- end .footer-rows-container -->
+
+            <div class="contact-information">
+                <h3>Contact Information</h3>
+                <p><i class="fa-solid fa-phone-volume"></i>(777) 777 7777</p>
+                <p><i class="fa-solid fa-envelope"></i>support@trekmountainbikes.com</p>
+                <p><i class="fa-solid fa-location-dot"></i>123 Any Street <br>
+                    Logan, UT 84341</p>
+            </div><!-- end .contact-information -->
+
+            <div class="social-media-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div><!-- end .social-media-icons -->
+
+            <p>&copy; 2023 Trek Mountain Bikes</p>
+        </div><!-- end .container -->
+    </footer>
     <script src="js/navbar.js"></script>
 </body>
 
