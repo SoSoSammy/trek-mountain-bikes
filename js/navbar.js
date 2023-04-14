@@ -10,21 +10,28 @@ let dropDown2 = document.getElementById('js-dropdown-2');
 let dropDown3 = document.getElementById('js-dropdown-3');
 let dropDown4 = document.getElementById('js-dropdown-4');
 
-// // Create a variable for the hamburger menu
+// Create a variable for the cart sidebar
+let cartSideBar = document.getElementById('js-cart-sidebar');
+
+// // Create a variable for the navigation menu toggle hamburger menu
 let navBarToggle = document.getElementById('js-navbar-toggle');
 
-// Create a variable for the X button in the navigation menu
-let navBarToggleX = document.getElementById('js-navbar-toggle-close');
+// Create a variable for the navigation menu toggle X button
+let navBarToggleClose = document.getElementById('js-navbar-toggle-close');
 
-// // Create a variable for the searchbar icon
+// // Create a variable for the searchbar toggle searchbar icon
 let searchBarToggle = document.getElementById('js-searchbar-toggle');
 
-// Create a variable for the dropdown link
+// Create a variable for the dropdown toggle dropdown link
 let dropDownToggle1 = document.getElementById('js-dropdown-toggle-1');
 let dropDownToggle2 = document.getElementById('js-dropdown-toggle-2');
 let dropDownToggle3 = document.getElementById('js-dropdown-toggle-3');
 let dropDownToggle4 = document.getElementById('js-dropdown-toggle-4');
 
+// Create a variable for the cart toggle shopping cart
+let cartSideBarToggle = document.getElementById('js-cart-toggle');
+// Create a variable for the cart toggle X button
+let cartSideBarToggleClose = document.getElementById('js-cart-toggle-close');
 
 // // When the hamburger menu is clicked on mobile, open up the navigation menu
 navBarToggle.addEventListener('click', function () {
@@ -32,7 +39,7 @@ navBarToggle.addEventListener('click', function () {
 });
 
 // When the X button in the navigation menu is clicked on mobile, close the menu
-navBarToggleX.addEventListener('click', function () {
+navBarToggleClose.addEventListener('click', function () {
     mainNav.classList.toggle('nav-active');
 });
 
@@ -60,4 +67,14 @@ dropDownToggle3.addEventListener('click', function () {
 dropDownToggle4.addEventListener('click', function () {
     dropDown4.classList.toggle('dropdown-active');
     dropDownToggle4.childNodes[1].classList.toggle('dropdown-label-active');
+});
+
+// When the shopping cart button is clicked, open the cart sidebar
+cartSideBarToggle.addEventListener('click', function () {
+    cartSideBar.classList.toggle('cart-active');
+});
+
+// When the X button in the cart sidebar is clicked, close the sidebar
+cartSideBarToggleClose.addEventListener('click', function () {
+    cartSideBar.classList.toggle('cart-active');
 });
