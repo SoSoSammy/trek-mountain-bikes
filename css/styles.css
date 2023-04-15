@@ -666,7 +666,6 @@ content in front of it */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
 
@@ -688,9 +687,8 @@ content in front of it */
     font-family: "Poppins", sans-serif;
 }
 
-.modal-content form button {
-    font-size: 18px;
-    cursor: pointer;
+.modal-content form a {
+    margin-top: 20px;
 }
 
 
