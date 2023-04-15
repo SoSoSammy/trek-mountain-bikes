@@ -642,13 +642,11 @@ content in front of it */
     transform: translate(-50%, -50%);
     background-color: white;
     width: 80vw;
-    border-radius: 0.5rem;
 }
 
 .modal-header {
     background-color: var(--dark-color);
     color: white;
-    border-radius: 0.4rem 0.4rem 0 0;
     padding: 20px 25px;
     margin: -1px;
 }
