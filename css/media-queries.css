@@ -1,6 +1,7 @@
+/* Tablets */
 @media screen and (min-width: 768px) {
     .mobile-nav {
-        translate: -720px;
+        translate: -740px;
         width: 70vw;
     }
 
@@ -9,8 +10,20 @@
     }
 
     .cart {
-        translate: 720px;
+        translate: 740px;
         width: 70vw;
+    }
+
+    .cart-body p {
+        font-size: 28px;
+    }
+
+    .cart-body i {
+        font-size: 100px;
+    }
+
+    .cart-body a {
+        font-size: 22px;
     }
 
     .cart-active {
@@ -18,32 +31,181 @@
     }
 }
 
+/* Desktop */
 @media screen and (min-width: 992px) {
+    /* Hide mobile navigation */
+    .navbar-row-mobile {
+        display: none;
+    }
+
     .mobile-nav {
         display: none;
     }
 
+    /* Desktop navigation */
+    .navbar-row-desktop {
+        display: block;
+        padding: 20px 0;
+    }
 
+    .navbar-row-desktop .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar-row-desktop a.logo,
+    .navbar-row-desktop .nav-icons {
+        flex: 1;
+    }
+
+    .navbar-row-desktop .logo img {
+        width: 170px;
+    }
+
+    .navbar-row-desktop .searchbar {
+        /* margin-bottom: auto; */
+        margin: auto;
+        flex: 2;
+    }
+
+    .navbar-row-desktop .searchbar input {
+        font-size: 20px;
+    }
+
+    .navbar-row-desktop .searchbar i {
+        font-size: 20px;
+    }
+
+    .navbar-row-desktop .nav-icons {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navbar-row-desktop .nav-icons i:nth-child(1) {
+        margin-right: 20px;
+    }
+
+    .navbar-row-desktop .nav-icons i {
+        color: var(--dark-color);
+        font-size: 36px;
+        transition: all 0.2s linear;
+    }
+
+    .navbar-row-desktop .nav-icons i:hover {
+        color: #425b58;
+    }
+
+    .desktop-nav {
+        display: block;
+    }
+
+    .desktop-nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto 0;
+        padding: 0;
+    }
+
+    .desktop-nav li {
+        padding: 14px 16px;
+    }
+
+    .desktop-nav li a {
+        color: var(--dark-color);
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .desktop-dropdown {
+        position: absolute;
+        left: 0;
+        top: 217px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s, visiblity 0.3s;
+        transition-delay: 0.07s;
+        padding: 20px 0;
+        background-color: white;
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .desktop-dropdown {
+        border-top: 1px solid #d6dee4;
+    }
+
+    .desktop-dropdown .container {
+        display: flex;
+        justify-content: space-between;
+        width: 75vw;
+    }
+
+    .desktop-dropdown a,
+    .desktop-dropdown p {
+        color: var(--dark-color);
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: none;
+        margin: 0;
+    }
+
+    .desktop-dropdown a:hover {
+        color: #425b58;
+    }
+
+    .desktop-nav a:hover {
+        color: #425b58;
+    }
+    
+    .desktop-nav li:hover .desktop-dropdown {
+        visibility: visible; 
+        opacity: 1;
+    }
+
+    .drivetrain,
+    .derailleurs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desktop-nav .drivetrain a,
+    .desktop-nav .derailleurs a {
+        font-weight: 400;
+    }
+
+    .desktop-nav .drivetrain p,
+    .desktop-nav .drivetrain a,
+    .desktop-nav .derailleurs p,
+    .desktop-nav .derailleurs a {
+        margin: 5px 0;
+    }
+
+    .desktop-nav .derailleurs p {
+        margin-top: 12px;
+    }
+
+
+    /* Cart sidebar */
     .cart {
         translate: 800px;
-        width: 70vw;
+        width: 40vw;
     }
 
     .cart-active {
         translate: 0;
     }
+
+    /* Hero Section */
+    .hero-section {
+        align-items: flex-start;
+    }
 }
 
 @media screen and (min-width: 1060px) {
-    .mobile-nav {
-        translate: -1500px;
-        width: 70vw;
-    }
-
-    .nav-active {
-        translate: 0;
-    }
-
     .cart {
         translate: 1500px;
         width: 70vw;
