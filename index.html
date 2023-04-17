@@ -37,7 +37,8 @@
 
     <!-- ========================= Navigation ============================== -->
     <nav class="navbar">
-        <div class="navbar-row">
+        <!-- ================= Mobile Navbar ===================== -->
+        <div class="navbar-row navbar-row-mobile">
             <div class="container">
                 <!-- ============ Hamburger menu ============= -->
                 <div class="nav-icon navbar-row-item">
@@ -64,19 +65,19 @@
                     </div><!-- end .nav-icon -->
                 </div><!-- end .nav-icons navbar-row-item -->
             </div><!-- end .container -->
-        </div><!-- end .navbar-row -->
+        </div><!-- end .navbar-row navbar-row-mobile -->
 
-        <!-- ============= Nav searchbar ============== -->
-        <div class="nav-searchbar" id="js-searchbar">
+        <!-- ======================= Mobile searchbar ============================= -->
+        <div class="mobile-searchbar" id="js-searchbar">
             <div class="container">
                 <div class="searchbar">
                     <input type="text" placeholder="Search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div><!-- end .searchbar -->
             </div><!-- end .container -->
-        </div><!-- end .nav-searchbar #js-searchbar -->
+        </div><!-- end .mobile-searchbar #js-searchbar -->
 
-        <!-- ========= Mobile navigation ============= -->
+        <!-- ========================= Mobile navigation ================================= -->
         <section class="mobile-nav" id="js-menu">
             <div class="mobile-nav-header">
                 <h2>Menu</h2>
@@ -155,13 +156,78 @@
             </div><!-- end .mobile-nav-body -->
 
             <div class="mobile-nav-footer">
-                <img src="images/icons/user.png">
+                <!-- <img src="images/icons/user.png"> -->
+                <i class="fa-solid fa-user"></i>
                 <p>Log in or sign up</p>
             </div><!-- end .mobile-nav-footer -->
         </section><!-- end .mobile-nav #js-menu -->
 
+        <!-- ====================== Desktop Navbar =================== -->
+        <div class="navbar-row navbar-row-desktop">
+            <div class="container">
+                <!-- ================ Logo ===================== -->
+                <a href="#" class="logo navbar-row-item">
+                    <img src="images/logo/Trek Mountain Bikes Logo.png" alt="Trek Mountain Bikes Logo">
+                </a><!-- end .logo navbar-row-item -->
+
+                <!-- ================ Searchbar ================= -->
+                <div class="searchbar">
+                    <input type="text" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div><!-- end .searchbar -->
+
+                <!-- ====== Profile icon and shopping cart ====== -->
+                <div class="nav-icons navbar-row-item">
+                    <div class="nav-icon">
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                    </div><!-- end .nav-icon -->
+
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-cart-shopping" id="js-cart-toggle-desktop"></i>
+                    </div><!-- end .nav-icon -->
+                </div><!-- end .nav-icons navbar-row-item -->
+            </div><!-- end .container -->
+        </div><!-- end .navbar-row navbar-row-desktop -->
+
         <!-- ========== Desktop navigation ============ -->
         <div class="desktop-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Bikes</a></li>
+                    <li><a href="#">Accessories <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="accessories-dropdown desktop-dropdown">
+                            <div class="container">
+                                <a href="#">Lights</a>
+                                <a href="#">Baskets</a>
+                                <a href="#">Bags</a>
+                            </div><!-- end .container -->
+                        </div><!-- end .accessories-dropdown desktop-dropdown  -->
+                    </li>
+                    <li><a href="#">Components <i class="fa-solid fa-chevron-down"></i></a></a>
+                        <div class="accessories-dropdown desktop-dropdown">
+                            <div class="container">
+                                <a href="#">Seats</a>
+                                <a href="#">Brakes</a>
+                                <a href="#">Wheels</a>
+                                <a href="#">Handlebars</a>
+                                <div class="drivetrain">
+                                    <p>Drivetrain</p>
+                                    <a href="#">Chains</a>
+                                    <a href="#">Shifters</a>
+                                    <div class="derailleurs">
+                                        <p>Derailleurs</p>
+                                        <a href="#">Front</a>
+                                        <a href="#">Rear</a>
+                                    </div><!-- end .derailleurs -->
+                                </div><!-- end .drivetrain -->
+                            </div><!-- end .container -->
+                        </div><!-- end .accessories-dropdown desktop-dropdown  -->
+                    </li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div><!-- end .container -->
+
 
         </div><!-- end .desktop-nav -->
 
