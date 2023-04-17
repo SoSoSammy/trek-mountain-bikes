@@ -30,6 +30,8 @@ let dropDownToggle4 = document.getElementById('js-dropdown-toggle-4');
 
 // Create a variable for the cart toggle shopping cart
 let cartSideBarToggle = document.getElementById('js-cart-toggle');
+let cartSideBarToggleDesktop = document.getElementById('js-cart-toggle-desktop');
+
 // Create a variable for the cart toggle X button
 let cartSideBarToggleClose = document.getElementById('js-cart-toggle-close');
 
@@ -71,6 +73,10 @@ dropDownToggle4.addEventListener('click', function () {
 
 // When the shopping cart button is clicked, open the cart sidebar
 cartSideBarToggle.addEventListener('click', function () {
+    cartSideBar.classList.toggle('cart-active');
+});
+
+cartSideBarToggleDesktop.addEventListener('click', function () {
     cartSideBar.classList.toggle('cart-active');
 });
 
