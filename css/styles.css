@@ -277,16 +277,11 @@ input {
     align-items: center;
 }
 
-/* .mobile-nav-footer img {
-    width: 75px;
-    margin-right: 20px;
-} */
-
 .mobile-nav-footer i {
-    font-size: 60px;
+    font-size: 40px;
     border: 2px solid var(--dark-color);
-    border-radius: 50px;
-    padding: 19px 25px;
+    border-radius: 100px;
+    padding: 14px 18px;
     margin-right: 15px;
 }
 
@@ -475,8 +470,8 @@ input {
     overflow-x: auto;
 }
 
-.product-card {
-    margin: 0 20px;
+.product-card:not(:nth-last-child(1)) {
+    margin-right: 20px;
 }
 
 .product-card h3 {
