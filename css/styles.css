@@ -391,6 +391,7 @@ input {
     font-size: 60px;
     width: 228px;
     text-align: center;
+    text-shadow: 2px 4px 8px hsla(0, 0%, 100%, 1);
 }
 
 .hero-section a {
