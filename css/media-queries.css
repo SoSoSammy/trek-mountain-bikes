@@ -225,6 +225,7 @@
 
     .hero-section h1 {
         text-align: left;
+        text-shadow: none;
     }
 
     .hero-section a {
