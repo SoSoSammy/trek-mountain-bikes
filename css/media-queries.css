@@ -74,7 +74,6 @@
     }
 
     .navbar-row-desktop .searchbar {
-        /* margin-bottom: auto; */
         margin: auto;
         flex: 2;
     }
@@ -226,6 +225,12 @@
 
     .hero-section h1 {
         text-align: left;
+    }
+
+    .hero-section a {
+        font-size: 22px;
+        padding: 8px 80px;
+        margin-top: 20px;
     }
 
     /* Shopping Item Cards */
