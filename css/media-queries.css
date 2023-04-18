@@ -29,10 +29,20 @@
     .cart-active {
         translate: 0;
     }
+
+    /* Business Feature Cards */
+    .business-feature-card h2 {
+        width: auto;
+    }
 }
 
 /* Desktop */
 @media screen and (min-width: 992px) {
+    /* Global */
+    h2 {
+        font-size: 38px;
+    }
+
     /* Hide mobile navigation */
     .navbar-row-mobile {
         display: none;
@@ -89,7 +99,7 @@
     .navbar-row-desktop .nav-icons i {
         color: var(--dark-color);
         font-size: 36px;
-        transition: all 0.2s linear;
+        transition: 0.3s all;
     }
 
     .navbar-row-desktop .nav-icons i:hover {
@@ -240,10 +250,42 @@
         background-size: cover;
         background-position: center;
     }
-
+    
+    .shopping-item-card h2 {
+        font-size: 40px;
+    }
+    
+    .shopping-item-card span.shop-now {
+        font-size: 20px;
+    }
     /* Product Section */
     .new-arrivals {
         margin: 40px 0;
+    }
+
+    .product-card h3 {
+        font-size: 22px;
+    }
+    
+    .product-card img {
+        width: 316px;
+    }
+
+    .img-wrapper {
+        width: 316px;
+        height: 316px;
+    }
+
+    .slide-effect {
+        width: 316px;
+    }
+
+    .img-wrapper:hover .slide-effect {
+        height: 316px;
+    }
+    
+    .product-details p {
+        font-size: 18px;
     }
 
     /* Business Features */
@@ -267,7 +309,39 @@
         background-position: center;
     }
 
+    .email-newsletter h2 {
+        font-size: 42px;
+        width: auto;
+    }
+
+    .email-newsletter p {
+        width: 290px;
+        font-size: 22px;
+        margin: 40px 0;
+    }
+
+    .email-newsletter a {
+        font-size: 22px;
+    }
+
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-row div {
+        flex: 1;
+    }
+
+    .form-row .first-name {
+        margin-right: 20px;
+    }
+
     /* Footer */
+    footer {
+        padding: 60px 0 50px 0;
+    }
+
     .footer-rows-container {
         flex-direction: row;
         justify-content: space-between;
@@ -316,6 +390,7 @@
 }
 
 @media screen and (min-width: 1060px) {
+    /* Cart */
     .cart {
         translate: 1500px;
         width: 30vw;
@@ -332,7 +407,30 @@
 }
 
 @media screen and (min-width: 1700px) {
+    /* Global */
+    h2 {
+        font-size: 42px;
+    }
+    
+    /* Cart */
+    .cart {
+        width: 20vw;
+    }
+
+    /* Hero */
     .hero-section {
         height: 600px;
+    }
+
+    /* Email newsletter */
+    .modal-content {
+        width: 60vw;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    /* Email newsletter */
+    .modal-content {
+        width: 40vw;
     }
 }
