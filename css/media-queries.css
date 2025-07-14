@@ -132,7 +132,7 @@
     .desktop-dropdown {
         position: absolute;
         left: 0;
-        top: 217px;
+        top: 216px;
         visibility: hidden;
         opacity: 0;
         transition: opacity 0.3s, visiblity 0.3s;
