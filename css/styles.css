@@ -311,7 +311,7 @@ input {
     padding: 20px;
     overflow: auto;
     translate: 500px;
-    transition: 0.5s all ease-in-out;
+    transition: 0.5s all;
     margin-bottom: 20px;
     z-index: 1;
 }
