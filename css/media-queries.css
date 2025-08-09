@@ -377,8 +377,13 @@
         flex: 1;
     }
 
-    .contact-information {
+    .contact-information h3 {
         text-align: center;
+    }
+
+    .contact-information-data {
+        display: flex;
+        justify-content: space-between;
     }
 
     .social-media-icons {
