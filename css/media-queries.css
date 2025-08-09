@@ -107,6 +107,12 @@
 
     .desktop-nav {
         display: block;
+        background-color: var(--accent-color2);
+    }
+
+    .desktop-nav .down-arrow {
+        display: inline-block;
+        transform: rotate(90deg);
     }
 
     .desktop-nav ul {
@@ -120,10 +126,16 @@
 
     .desktop-nav li {
         padding: 14px 16px;
+        transition: 0.2s ease-in;
     }
 
-    .desktop-nav li a {
-        color: var(--dark-color);
+    .desktop-nav li:hover {
+        cursor: pointer;
+        background-color: #6F9591;
+    }
+
+    .desktop-nav li > a {
+        color: white;
         text-decoration: none;
         font-size: 20px;
         font-weight: 500;
@@ -163,10 +175,6 @@
     }
 
     .desktop-dropdown a:hover {
-        color: #425b58;
-    }
-
-    .desktop-nav a:hover {
         color: #425b58;
     }
     
