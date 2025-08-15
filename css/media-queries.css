@@ -120,89 +120,26 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
         margin: auto 0;
         padding: 0;
     }
 
-    .desktop-nav li {
+    .desktop-nav .menu-item a {
         padding: 14px 16px;
         transition: 0.2s ease-in;
     }
 
-    .desktop-nav li:hover {
-        cursor: pointer;
-        background-color: #6F9591;
-    }
-
-    .desktop-nav li > a {
+    .desktop-nav .menu-item > a {
         color: white;
         text-decoration: none;
         font-size: 20px;
         font-weight: 500;
     }
 
-    .desktop-dropdown {
-        position: absolute;
-        left: 0;
-        top: 216px;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity 0.3s, visiblity 0.3s;
-        transition-delay: 0.07s;
-        padding: 20px 0;
-        background-color: white;
-        width: 100%;
-        padding: 40px 0;
-    }
-
-    .desktop-dropdown {
-        border-top: 1px solid #d6dee4;
-    }
-
-    .desktop-dropdown .container {
-        display: flex;
-        justify-content: space-between;
-        width: 75vw;
-    }
-
-    .desktop-dropdown a,
-    .desktop-dropdown p {
-        color: var(--dark-color);
-        font-size: 20px;
-        font-weight: 500;
-        text-decoration: none;
-        margin: 0;
-    }
-
-    .desktop-dropdown a:hover {
-        color: #425b58;
-    }
-    
-    .desktop-nav li:hover .desktop-dropdown {
-        visibility: visible; 
-        opacity: 1;
-    }
-
-    .drivetrain,
-    .derailleurs {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .desktop-nav .drivetrain a,
-    .desktop-nav .derailleurs a {
-        font-weight: 400;
-    }
-
-    .desktop-nav .drivetrain p,
-    .desktop-nav .drivetrain a,
-    .desktop-nav .derailleurs p,
-    .desktop-nav .derailleurs a {
-        margin: 5px 0;
-    }
-
-    .desktop-nav .derailleurs p {
-        margin-top: 12px;
+    .desktop-nav .menu-item:hover > a {
+        cursor: pointer;
+        background-color: #6F9591;
     }
 
 

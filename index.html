@@ -193,42 +193,64 @@
         <div class="desktop-nav">
             <div class="container">
                 <ul>
-                    <li><a href="#">Bikes</a></li>
-                    <li><a href="#">Accessories <span class="down-arrow">></span></a>
-                        <div class="accessories-dropdown desktop-dropdown">
-                            <div class="container">
-                                <a href="#">Lights</a>
-                                <a href="#">Baskets</a>
-                                <a href="#">Bags</a>
-                            </div><!-- end .container -->
-                        </div><!-- end .accessories-dropdown desktop-dropdown  -->
-                    </li>
-                    <li><a href="#">Components <span class="down-arrow">></span></a>
-                        <div class="accessories-dropdown desktop-dropdown">
-                            <div class="container">
+                    <li class="menu-item"><a href="#">Bikes</a></li>
+                    <li class="menu-item has-dropdown">
+                        <a href="#">Accessories <span class="down-arrow">></span></a>
+                        <ul class="dropdown-menu">
+                                <li class="menu-item">
+                                    <a href="#">Lights</a>
+                                </li><!-- end .menu-item -->
+                                <li class="menu-item">
+                                    <a href="#">Baskets</a>
+                                </li><!-- end .menu-item -->
+                                <li class="menu-item">
+                                    <a href="#">Bags</a>
+                                </li><!-- end .menu-item -->
+                        </ul><!-- end .dropdown-menu  -->
+                    </li><!-- end .menu-item has-dropdown -->
+                    <li class="menu-item has-dropdown">
+                        <a href="#">Components <span class="down-arrow">></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="menu-item">
                                 <a href="#">Seats</a>
+                            </li><!-- end .menu-item -->
+                            <li class="menu-item">
                                 <a href="#">Brakes</a>
+                            </li><!-- end .menu-item -->
+                            <li class="menu-item">
                                 <a href="#">Wheels</a>
+                            </li><!-- end .menu-item -->
+                            <li class="menu-item">
                                 <a href="#">Handlebars</a>
-                                <div class="drivetrain">
-                                    <p>Drivetrain</p>
-                                    <a href="#">Chains</a>
-                                    <a href="#">Shifters</a>
-                                    <div class="derailleurs">
-                                        <p>Derailleurs</p>
-                                        <a href="#">Front</a>
-                                        <a href="#">Rear</a>
-                                    </div><!-- end .derailleurs -->
-                                </div><!-- end .drivetrain -->
-                            </div><!-- end .container -->
-                        </div><!-- end .accessories-dropdown desktop-dropdown  -->
-                    </li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Sale</a></li>
+                            </li><!-- end .menu-item -->
+                                <li class="menu-item has-dropdown">
+                                    <a href="#">Drivetrain <span class="down-arrow">></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="menu-item">
+                                            <a href="#">Chains</a>
+                                        </li><!-- end .menu-item -->
+                                        <li class="menu-item">
+                                            <a href="#">Shifters</a>
+                                        </li><!-- end .menu-item -->
+                                        <li class="menu-item has-dropdown">
+                                            <a href="#">Derailleurs <span class="down-arrow">></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="menu-item">
+                                                    <a href="#">Front</a>
+                                                </li><!-- end .menu-item -->
+                                                <li class="menu-item">
+                                                    <a href="#">Rear</a>
+                                                </li><!-- end .menu-item -->
+                                            </ul><!-- end .dropdown-menu -->
+                                        </li><!-- end .menu-item has-dropdown -->
+                                    </ul><!-- end .dropdown-menu -->
+                                </li><!-- end .menu-item has-dropdown -->
+                        </ul><!-- end .dropdown-menu  -->
+                    </li><!-- end .menu-item has-dropdown -->
+                    <li class="menu-item"><a href="#">Shop</a></li>
+                    <li class="menu-item"><a href="#">Sale</a></li>
                 </ul>
             </div><!-- end .container -->
-
-
         </div><!-- end .desktop-nav -->
 
         <!-- ================== Cart ==================== -->
