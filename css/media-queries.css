@@ -118,23 +118,23 @@
     .desktop-nav ul {
         list-style-type: none;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        /* align-items: center; */
         position: relative;
-        margin: auto 0;
         padding: 0;
     }
 
-    .desktop-nav .menu-item a {
-        padding: 14px 16px;
-        transition: 0.2s ease-in;
+    .desktop-nav .menu-item {
+        position: relative;
+        white-space: nowrap;
     }
-
+    
     .desktop-nav .menu-item > a {
-        color: white;
+        padding: 14px 16px;
+        color: rgb(0, 0, 0);
         text-decoration: none;
         font-size: 20px;
         font-weight: 500;
+        transition: 0.2s ease-in;
     }
 
     .desktop-nav .menu-item:hover > a {
@@ -142,6 +142,39 @@
         background-color: #6F9591;
     }
 
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%; /* Position right below the parent menu item */
+        min-width: 200px;
+        background-color: white;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        z-index: 10;
+        padding: 8px 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    }
+
+    /* When hovering over a menu item that has a dropdown, display its direct child dropdown-menu */
+    .menu-item.has-dropdown:hover > .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    /* Target dropdowns that are inside other dropdowns */
+    .dropdown-menu .dropdown-menu {
+        /* Position to the side of the parent li */
+        left: 100%;
+        top: -0.5rem; /* Align with the top of the parent li, accounting for padding */
+        margin-top: 0;
+        padding-left: 0.25rem; /* Add some space so the menus don't touch */
+    }
 
     /* Cart sidebar */
     .cart {
