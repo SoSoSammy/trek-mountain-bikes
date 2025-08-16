@@ -113,98 +113,87 @@
     .desktop-nav .down-arrow {
         display: inline-block;
         transform: rotate(90deg);
+        margin-left: 8px;
     }
 
     .desktop-nav ul {
         list-style-type: none;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: auto 0;
+        position: relative;
+        margin: 0;
         padding: 0;
+        align-items: flex-start;
     }
 
-    .desktop-nav li {
-        padding: 14px 16px;
-        transition: 0.2s ease-in;
+    .desktop-nav .menu-item {
+        position: relative;
+        white-space: nowrap;
     }
-
-    .desktop-nav li:hover {
-        cursor: pointer;
-        background-color: #6F9591;
-    }
-
-    .desktop-nav li > a {
+    
+    .desktop-nav .menu-item > a {
+        display: flex;
+        align-items: center;
+        padding: 20px 24px;
         color: white;
         text-decoration: none;
         font-size: 20px;
         font-weight: 500;
+        transition: 0.2s ease-in;
     }
 
-    .desktop-dropdown {
-        position: absolute;
-        left: 0;
-        top: 216px;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity 0.3s, visiblity 0.3s;
-        transition-delay: 0.07s;
-        padding: 20px 0;
-        background-color: white;
-        width: 100%;
-        padding: 40px 0;
+    .desktop-nav .menu-item:hover > a {
+        cursor: pointer;
+        background-color: #6F9591;
     }
 
-    .desktop-dropdown {
-        border-top: 1px solid #d6dee4;
-    }
-
-    .desktop-dropdown .container {
-        display: flex;
-        justify-content: space-between;
-        width: 75vw;
-    }
-
-    .desktop-dropdown a,
-    .desktop-dropdown p {
+    /* Styling for dropdown links */
+    .desktop-nav .dropdown-menu > .menu-item > a {
         color: var(--dark-color);
-        font-size: 20px;
-        font-weight: 500;
-        text-decoration: none;
-        margin: 0;
     }
 
-    .desktop-dropdown a:hover {
-        color: #425b58;
-    }
-    
-    .desktop-nav li:hover .desktop-dropdown {
-        visibility: visible; 
-        opacity: 1;
+    .desktop-nav .dropdown-menu > .menu-item:hover > a {
+        background-color: #E3E3E3;
     }
 
-    .drivetrain,
-    .derailleurs {
+    .dropdown-menu {
         display: flex;
         flex-direction: column;
+        position: absolute;
+        left: 0;
+        background-color: white;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        z-index: 10;
+        padding: 8px 0;
+        margin: 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
     }
 
-    .desktop-nav .drivetrain a,
-    .desktop-nav .derailleurs a {
-        font-weight: 400;
+    .desktop-nav .menu-item > .dropdown-menu > .menu-item {
+        width: 100%;
     }
 
-    .desktop-nav .drivetrain p,
-    .desktop-nav .drivetrain a,
-    .desktop-nav .derailleurs p,
-    .desktop-nav .derailleurs a {
-        margin: 5px 0;
+    .desktop-nav .menu-item > .dropdown-menu {
+        position: absolute;
+        width: 100%;
     }
 
-    .desktop-nav .derailleurs p {
-        margin-top: 12px;
+    /* When hovering over a menu item that has a dropdown, display its direct child dropdown-menu */
+    .menu-item.has-dropdown:hover > .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto; /* Allow mouse events only when visible */
     }
 
+    /* Target dropdowns that are inside other dropdowns */
+    .dropdown-menu .dropdown-menu {
+        left: 100%;
+        top: 0px;
+        margin-top: 0;
+    }
 
     /* Cart sidebar */
     .cart {
