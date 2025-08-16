@@ -122,7 +122,7 @@
         position: relative;
         margin: 0;
         padding: 0;
-        height: 100px;
+        align-items: flex-start;
     }
 
     .desktop-nav .menu-item {
@@ -133,7 +133,6 @@
     .desktop-nav .menu-item > a {
         display: flex;
         align-items: center;
-        height: 100%;
         padding: 20px 24px;
         color: rgb(0, 0, 0);
         text-decoration: none;
@@ -148,10 +147,11 @@
     }
 
     .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         position: absolute;
         left: 0;
-        top: 100%; /* Position right below the parent menu item */
-        min-width: 200px;
         background-color: white;
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         z-index: 10;
@@ -163,20 +163,24 @@
         transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
     }
 
+    .desktop-nav .menu-item > .dropdown-menu {
+        position: absolute;
+    }
+
     /* When hovering over a menu item that has a dropdown, display its direct child dropdown-menu */
     .menu-item.has-dropdown:hover > .dropdown-menu {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
+        pointer-events: auto; /* Allow mouse events only when visible */
     }
 
     /* Target dropdowns that are inside other dropdowns */
     .dropdown-menu .dropdown-menu {
-        /* Position to the side of the parent li */
+        /* Allow mouse events only when visible */
         left: 100%;
-        /* top: -8px; Align with the top of the parent li, accounting for padding */
+        top: 0px;
         margin-top: 0;
-        padding-left: 0.25rem; /* Add some space so the menus don't touch */
     }
 
     /* Cart sidebar */
