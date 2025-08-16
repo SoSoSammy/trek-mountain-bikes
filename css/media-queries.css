@@ -134,7 +134,7 @@
         display: flex;
         align-items: center;
         padding: 20px 24px;
-        color: rgb(0, 0, 0);
+        color: white;
         text-decoration: none;
         font-size: 20px;
         font-weight: 500;
@@ -144,6 +144,15 @@
     .desktop-nav .menu-item:hover > a {
         cursor: pointer;
         background-color: #6F9591;
+    }
+
+    /* Styling for dropdown links */
+    .desktop-nav .dropdown-menu > .menu-item > a {
+        color: var(--dark-color);
+    }
+
+    .desktop-nav .dropdown-menu > .menu-item:hover > a {
+        background-color: #E3E3E3;
     }
 
     .dropdown-menu {
