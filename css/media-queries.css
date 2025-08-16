@@ -149,7 +149,6 @@
     .dropdown-menu {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         position: absolute;
         left: 0;
         background-color: white;
@@ -163,8 +162,13 @@
         transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
     }
 
+    .desktop-nav .menu-item > .dropdown-menu > .menu-item {
+        width: 100%;
+    }
+
     .desktop-nav .menu-item > .dropdown-menu {
         position: absolute;
+        width: 100%;
     }
 
     /* When hovering over a menu item that has a dropdown, display its direct child dropdown-menu */
@@ -177,7 +181,6 @@
 
     /* Target dropdowns that are inside other dropdowns */
     .dropdown-menu .dropdown-menu {
-        /* Allow mouse events only when visible */
         left: 100%;
         top: 0px;
         margin-top: 0;
