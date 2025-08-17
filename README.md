@@ -19,6 +19,8 @@
 
 I created this project in my Introduction to Design class at Bridgerland Technical College. I went through the steps a designer would take, such as planning a meeting agenda to discuss the client's website, budgeting the time and resources needed, and drafting a website design agreement. I then created a site map for the website, chose organization schemes, [wireframed the homepage design using Figma](https://www.figma.com/design/OqFLIP5z8QQZERD4qaYmZY/Trek-Mountain-Bikes-Website-Design?node-id=2333-53&t=38Wv2bNVLn69sw2w-1), and coded the design with HTML, CSS, and JavaScript. I recently updated the UI and changed the style of the navigation dropdowns on desktop devices.
 
+(**Note:** the website I coded is just the home page for Trek Mountain Bikes. The hyperlinks on my website are just placeholders; they do not link to anything. This project helped me practice my UX, UI, HTML, CSS, and JavaScript skills. This website does not contain the functionality of an ecommerce website.)
+
 ### A Major Challenge I Overcame
 When updating the desktop navigation dropdown, I was trying to debug my CSS and discover why my navigation bar was off. The hyperlinks were going above their parent container, the height of my navbar included the dropdowns, and when hovering to display the dropdowns, the UI would glitch.
 
